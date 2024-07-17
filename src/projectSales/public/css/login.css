@@ -1,0 +1,92 @@
+/* General styling for the container */
+.container {
+    max-width: 400px; /* Max width for the form container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+  
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the form title */
+h2 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Font size for the title */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center align text */
+}
+
+/* General styling for form groups */
+.form-group {
+    margin-bottom: 15px; /* Space below each form group */
+}
+
+/* Styling for labels */
+.form-group label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-size: 14px; /* Font size for labels */
+    color: #333; /* Text color for labels */
+}
+
+/* Styling for form controls */
+.form-control {
+    width: 100%; /* Full width for form controls */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Styling for buttons */
+.btn {
+    display: inline-block; /* Inline-block for buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 16px; /* Font size for buttons */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center align text inside button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Styling for registration and password reset links */
+.register-link {
+    margin-top: 20px; /* Space above the registration and password reset links */
+    text-align: center; /* Center align text */
+}
+
+.register-link a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for error messages */
+.error {
+    background-color: #f8d7da; /* Light red background for error messages */
+    color: #721c24; /* Dark red text color */
+    border: 1px solid #f5c6cb; /* Border color for error messages */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the error message box */
+    margin-bottom: 20px; /* Space below error message box */
+}
+
+.error ul {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.error li {
+    margin-bottom: 10px; /* Space below each error message */
+}

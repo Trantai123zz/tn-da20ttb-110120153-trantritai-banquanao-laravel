@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header, nav, .container, .content, aside {
+    padding: 15px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+
+.navigation .left-menu,
+.navigation .right-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation .left-menu li,
+.navigation .right-menu li {
+    margin: 0 10px;
+}
+
+.navigation .left-menu li a,
+.navigation .right-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation .right-menu form {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .right-menu form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navigation .right-menu form button {
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navigation .right-menu form button:hover {
+    background: #0056b3;
+}
+header, nav {
+    background-color: #343a40;
+    color: #fff;
+}
+
+header a, nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover, nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container and layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: auto;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    flex: 3;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

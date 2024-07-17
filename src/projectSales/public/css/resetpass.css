@@ -1,0 +1,85 @@
+/* General container styling */
+.container {
+    max-width: 100%; /* Full width of the container */
+    padding: 0 15px; /* Padding on sides for smaller screens */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card styling */
+.card {
+    border-radius: 8px; /* Rounded corners for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card */
+}
+
+/* Card header styling */
+.card-header {
+    border-bottom: 1px solid #e0e0e0; /* Border below the header */
+}
+
+/* Header text styling */
+.card-header h5 {
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Font size for the header text */
+}
+
+/* Form styling */
+.card-body {
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px; /* Space below each form group */
+}
+
+/* Form label styling */
+.form-label {
+    font-size: 14px; /* Font size for labels */
+    color: #333; /* Dark color for labels */
+    display: block; /* Ensure labels are block elements */
+    margin-bottom: 8px; /* Space below labels */
+}
+
+/* Form control styling */
+.form-control {
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside input fields */
+    font-size: 16px; /* Font size for input text */
+}
+
+/* Invalid feedback styling */
+.invalid-feedback {
+    color: #dc3545; /* Red color for error messages */
+    font-size: 12px; /* Font size for error messages */
+    margin-top: 5px; /* Space above error messages */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text color */
+    padding: 12px; /* Padding inside the button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Button full width styling */
+.btn-primary.w-100 {
+    width: 100%; /* Full width for button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px; /* Space above card on smaller screens */
+    }
+}

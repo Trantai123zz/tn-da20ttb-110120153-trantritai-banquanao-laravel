@@ -1,0 +1,48 @@
+.sidebar-container {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-container h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.category-list, .brand-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li, .brand-list li {
+    margin-bottom: 10px;
+}
+
+.category-list li a, .brand-list li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-list li a:hover, .brand-list li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-section, .brand-section {
+    margin-bottom: 20px;
+}
+
+.category-section h5, .brand-section h5 {
+    color: #555;
+}

@@ -1,0 +1,49 @@
+/* Reset một số thuộc tính cơ bản */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cấu hình chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Định dạng khung nội dung chính */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Định dạng đoạn văn bản */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Định dạng liên kết */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

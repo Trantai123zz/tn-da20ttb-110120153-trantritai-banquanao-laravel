@@ -1,0 +1,86 @@
+/* General styling for the registration container */
+.register-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for the form title */
+.register-container h1 {
+    font-size: 28px; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center align text */
+    color: #333; /* Dark text color */
+}
+
+/* General styling for form columns */
+.form-column {
+    display: flex; /* Flexbox for columns layout */
+    flex-wrap: wrap; /* Wrap columns if necessary */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 20px; /* Space below columns */
+}
+
+/* Styling for each input field container */
+.form-column > div {
+    flex: 1 1 calc(50% - 20px); /* Two columns, adjusting width and spacing */
+}
+
+/* Styling for labels */
+.form-column label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space below labels */
+    font-size: 14px; /* Font size for labels */
+    color: #333; /* Text color for labels */
+}
+
+/* Styling for form controls */
+.form-column input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Styling for the submit button */
+.register-container button {
+    display: block; /* Block-level button */
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    font-size: 16px; /* Font size for button text */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center align text inside button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.register-container button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Styling for error messages */
+.error-messages {
+    background-color: #f8d7da; /* Light red background for error messages */
+    color: #721c24; /* Dark red text color */
+    border: 1px solid #f5c6cb; /* Border color for error messages */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the error message box */
+    margin-bottom: 20px; /* Space below error message box */
+}
+
+.error-messages ul {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.error-messages li {
+    margin-bottom: 10px; /* Space below each error message */
+}
