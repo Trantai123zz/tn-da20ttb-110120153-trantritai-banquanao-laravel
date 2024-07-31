@@ -5,7 +5,7 @@
 @section('content')
 <style>
     .container {
-        max-width: 600px; /* Giới hạn chiều rộng tối đa của container */
+        max-width: 400px; /* Giới hạn chiều rộng tối đa của container */
         margin: 50px auto; /* Căn giữa theo chiều ngang và khoảng cách từ trên */
         padding: 20px;
         background-color: #fff; /* Màu nền trắng */

@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\usersModels;
 use App\Models\categoryModels;
 use App\Models\brandModels;
+use Laravel\Socialite\Facades\Socialite;
+use Exception;
+use Illuminate\Http\RedirectResponse;
 class LoginController extends Controller
 {
     public function showLoginForm()
@@ -69,5 +72,51 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect()->route('login');
+    }
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function redirectToGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+        
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function handleGoogleCallback()
+    {
+        try {
+      
+            $user = Socialite::driver('google')->user();
+       
+            $finduser = usersModels::where('google_id', $user->id)->first();
+       
+            if($finduser){
+       
+                Auth::login($finduser);
+      
+                return redirect()->intended('dashboard');
+       
+            }else{
+                $newUser = usersModels::create([
+                    'name' => $user->name,
+                    'email' => $user->email,
+                    'google_id'=> $user->id,
+                    'password' => encrypt('my-google')
+                ]);
+      
+                Auth::login($newUser);
+      
+                return redirect()->intended('dashboard');
+            }
+      
+        } catch (Exception $e) {
+            dd($e->getMessage());
+        }
     }
 }

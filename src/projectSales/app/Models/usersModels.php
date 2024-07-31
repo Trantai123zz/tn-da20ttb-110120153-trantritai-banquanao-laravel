@@ -22,6 +22,7 @@ class usersModels extends Model
         'deleted_at',
         'remember_token',
         'email_verified_at',
+        'google_id',
     ];
 
     protected $hidden = [

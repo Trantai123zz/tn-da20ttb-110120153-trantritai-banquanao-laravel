@@ -19,8 +19,5 @@
             @yield('content')
         </div>
     </div>
-    <nav>
-        @include('partials.footer')
-    </nav>
 </body>
 </html>

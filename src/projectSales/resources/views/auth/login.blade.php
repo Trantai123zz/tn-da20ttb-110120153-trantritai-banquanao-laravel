@@ -24,6 +24,9 @@
         
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            <a href="{{ route('auth.google') }}" class="btn btn-primary">
+    Đăng nhập với Google
+</a>
         </div>
         <div class="register-link">
         <p>Bạn chưa có tài khoản? <a href="{{ route('register') }}">Đăng ký ngay</a></p>

@@ -46,6 +46,8 @@ Route::get('verify-email/{token}', [RegisterController::class, 'verifyEmail'])->
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('auth/google', [LoginController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('auth/google/callback', [LoginController::class, 'handleGoogleCallback']);
 
 Route::get('/products/search', [productControllers::class, 'search'])->name('products.search');
 

@@ -1,6 +1,4 @@
-<div class="swiper-slide">
-        <img class="banner-image" src="{{ asset('images/odt.jpg') }}" alt="Banner 3">
-</div>
+
 @extends('layout.cart')
 <link rel="stylesheet" href="{{ asset('css/order_detail.css') }}">
 
